@@ -247,7 +247,7 @@ export const Navbar: React.FC = () => {
               icon: <PiTelegramLogoLight />,
             },
             {
-              href: "",
+              href: "https://dexscreener.com/base/0xbdd5482f17c1bb4b934a16891dd2a491606a55b7",
               bg: "bg-[#000080]",
               hover: "hover:bg-[#FF9933]",
               icon: (
@@ -300,7 +300,7 @@ export const Navbar: React.FC = () => {
               <PiTelegramLogoLight />
             </a>
             <a
-              href=""
+              href="https://dexscreener.com/base/0xbdd5482f17c1bb4b934a16891dd2a491606a55b7"
               className="bg-[#000080] text-white p-3 rounded-full hover:bg-[#FF9933] transition cursor-pointer"
             >
               <img src={dexscreener} alt="dexscreener" className="w-5 h-5" />

@@ -55,19 +55,19 @@ const Footer = () => {
 
         <div className="flex justify-center gap-4 pt-2">
           <a
-            href="https://x.com/"
+            href="https://x.com/basepajeetman"
             className="bg-[#000080] text-white p-4 rounded-full border-2 border-white hover:bg-[#FF9933] transition cursor-pointer"
           >
             <FaXTwitter className="text-2xl" />
           </a>
           <a
-            href="https://t.me/"
+            href="https://t.me/pajeetm"
             className="bg-[#FF9933] text-white p-4 rounded-full border-2 border-white hover:bg-[#E88A2E] transition cursor-pointer"
           >
             <PiTelegramLogoLight className="text-2xl" />
           </a>
           <a
-            href="https://dexscreener.com/base/"
+            href=""
             className="bg-[#000080] text-white p-4 rounded-full border-2 border-white hover:bg-[#FF9933] transition cursor-pointer"
           >
             <img src={dexscreener} alt="dexscreener" className="w-7 h-7" />

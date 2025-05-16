@@ -201,7 +201,7 @@ export const HeroSection: React.FC = () => {
       {/* Button */}
       <div className="mt-8 flex flex-wrap justify-center gap-4 z-20">
         <a
-          href="https://app.uniswap.org/explore/tokens/base/"
+          href=""
           ref={button}
           className="flex items-center justify-center bg-[#FF9933] text-white text-[19px] font-bold border-2 border-[#000080] border-b-4 rounded-2xl px-[48px] py-[10px] cursor-pointer hover:bg-[#E88A2E] active:bg-[#D67D29]"
         >

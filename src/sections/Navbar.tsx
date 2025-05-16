@@ -159,7 +159,7 @@
 
 // src/sections/Navbar.tsx
 import React, { useState } from "react";
-import logo from "../assets/p-1.jpg";
+import logo from "../assets/p-1.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiTelegramLogoLight } from "react-icons/pi";
 import dexscreener from "../assets/dex-screener.png";
@@ -235,19 +235,19 @@ export const Navbar: React.FC = () => {
           {/* Social Buttons */}
           {[
             {
-              href: "https://x.com/",
+              href: "https://x.com/basepajeetman",
               bg: "bg-[#000080]",
               hover: "hover:bg-[#FF9933]",
               icon: <FaXTwitter />,
             },
             {
-              href: "https://t.me/",
+              href: "https://t.me/pajeetm",
               bg: "bg-[#FF9933]",
               hover: "hover:bg-[#E88A2E]",
               icon: <PiTelegramLogoLight />,
             },
             {
-              href: "https://dexscreener.com/base/",
+              href: "",
               bg: "bg-[#000080]",
               hover: "hover:bg-[#FF9933]",
               icon: (
@@ -288,19 +288,19 @@ export const Navbar: React.FC = () => {
           {/* Optional mobile social icons */}
           <div className="flex justify-center gap-4 pt-2">
             <a
-              href="https://x.com/"
+              href="https://x.com/basepajeetman"
               className="bg-[#000080] text-white p-3 rounded-full hover:bg-[#FF9933] transition cursor-pointer"
             >
               <FaXTwitter />
             </a>
             <a
-              href="https://t.me/"
+              href="https://t.me/pajeetm"
               className="bg-[#FF9933] text-white p-3 rounded-full hover:bg-[#E88A2E] transition cursor-pointer"
             >
               <PiTelegramLogoLight />
             </a>
             <a
-              href="https://dexscreener.com/base/"
+              href=""
               className="bg-[#000080] text-white p-3 rounded-full hover:bg-[#FF9933] transition cursor-pointer"
             >
               <img src={dexscreener} alt="dexscreener" className="w-5 h-5" />

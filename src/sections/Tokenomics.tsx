@@ -79,7 +79,7 @@
 
 
 // src/sections/Tokenomics.tsx
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Copy from "../components/Copy";
@@ -89,6 +89,20 @@ gsap.registerPlugin(ScrollTrigger);
 const TokenomicsFunVariant = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const ringRef = useRef<HTMLDivElement | null>(null);
+  const AnimatedNumber = ({ value }: { value: number }) => {
+    const [display, setDisplay] = useState(0);
+    useEffect(() => {
+      const obj = { val: 0 };
+      gsap.to(obj, {
+        val: value,
+        duration: 1.2,
+        ease: "power1.out",
+        onUpdate: () => setDisplay(Math.floor(obj.val)),
+      });
+    }, [value]);
+
+    return <span>{display.toLocaleString()}</span>;
+  };
 
   useEffect(() => {
     if (!sectionRef.current || !ringRef.current) return;
@@ -144,7 +158,12 @@ const TokenomicsFunVariant = () => {
               <p className="text-2xl mb-2 yang text-[#FF9933]">Ticker:</p>
               <p className="text-xl font-bold text-[#333333]">PJMAN</p>
             </div>
-
+            <div className="stat-block bg-white  border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px]">
+              <p className="text-2xl mb-2 yang">Total Supply:</p>
+              <p className="text-xl font-bold">
+                <AnimatedNumber value={1000000000} /> PJMAN
+              </p>
+            </div>
             <Copy />
           </div>
         </div>
